@@ -10,12 +10,15 @@ import {Question} from '../../models/question';
 export class QustionlistComponent implements OnInit {
     questions: Question[];
 
-    constructor(public dataService:DataService) {
+    constructor(public dataService: DataService) {
 
     }
 
     ngOnInit() {
         this.questions = this.dataService.getQuestions();
+    }
+    addQuestion(question:Question) {
+        this.dataService.addQuestion(question);
     }
 
 }

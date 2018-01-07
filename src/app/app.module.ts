@@ -8,6 +8,7 @@ import {QustionlistComponent} from './components/qustionlist/qustionlist.compone
 import {DataService} from './services/data.service';
 import { QuestionComponent } from './components/question/question.component';
 import { AddQuestionComponent } from './components/add-question/add-question.component';
+import { FormsModule} from '@angular/forms';
 
 @NgModule({
     declarations: [
@@ -18,7 +19,8 @@ import { AddQuestionComponent } from './components/add-question/add-question.com
         AddQuestionComponent
     ],
     imports: [
-        BrowserModule
+        BrowserModule,
+        FormsModule
 
     ],
     providers: [DataService],
